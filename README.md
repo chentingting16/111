@@ -13,7 +13,7 @@ understand the existing problems that GHA developers face in their practices as 
 2. Data for manual classification
 	* SO post: We extract all posts with at least one tag of “github-actions”, “github-action”, “github-package-registry”, “building-github-actions”,“github-actions-runners”, and “github-actions-self-hosted-runners”.
 	* GitHub issue: We use the GitHub Search API to filter the GHA-related issues. We filter out projects with less than 10 changes (commits or pull requests) in the last three months. We obtain all issues(exclude pull requests) created between July 31, 2008 and September 30, 2021, and extract issues tagged with “github action” or “github-action”. 
-	* This data includes  
+	* This data includes: 
     	1. 3,285 SO posts (Q\_S) with 1,224 accepted SO answers (A\_S)
     	2. 130 GitHub issues (Q\_G) with 82 closed GitHub issues (A\_G)
     * The data for manual classification can be found in `post_issue.csv`
@@ -24,7 +24,7 @@ understand the existing problems that GHA developers face in their practices as 
 	    4. url: url of a post or an issue   
 3. Data for characteristics analysis
 	* The data for manual classification can be found in `post_popularity.csv` and `post_issue_difficulty.csv`
-	* post\_popularity includes 3,285 SO posts' view number, favorite number, score and answer number.
+	* post\_popularity includes 3,285 SO posts' view number, favorite number, score and answer number
 	* post\_issue\_difficulty includes the following matrixs of 3,285 SO posts and 130 issues:
 		1. interval\_fir\_ans: median time interval to the first answer (issue comment), in second
 		2. interval\_acc\_ans: median time interval to the accepted answer (issue closure), in second
