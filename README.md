@@ -9,7 +9,7 @@ understand the existing problems that GHA developers face in their practices as 
 ##Data
 1. Data Collection
  - SO data, i.e., posts, from the official SO data dump (as of October 2021)
-  - GitHub data, i.e., issues, using the GitHub Search API 4
+ - GitHub data, i.e., issues, using the GitHub Search API 4
 2. Data for manual classification
   - SO post: We extract all posts with at least one tag of “github-actions”, “github-action”, “github-package-registry”, “building-github-actions”,“github-actions-runners”, and “github-actions-self-hosted-runners”.
   - GitHub issue: We use the GitHub Search API to filter the GHA-related issues. We filter out projects with less than 10 changes (commits or pull requests) in the last three months. We obtain all issues(exclude pull requests) created between July 31, 2008 and September 30, 2021, and extract issues tagged with “github action” or “github-action”. 
@@ -18,11 +18,10 @@ understand the existing problems that GHA developers face in their practices as 
     - 130 GitHub issues (Q\_G) with 82 closed GitHub issues (A\_G)
   - The data for manual classification can be found in `post_issue.csv`
   - Data structure: (id, paper_no, type, title, url)
-  		- id: the meta
-  		- paper\_no: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub question in our dataset, respectively.
-  		- type: "github issue" or "so post"
-  		- title: the title of a post or an issue
-  		- url: url of a post or an issue   
+  		 - paper\_no: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub question in our dataset, respectively.
+  		 - type: "github issue" or "so post"
+  		 - title: the title of a post or an issue
+  		 - url: url of a post or an issue   
   
 4. Data for characteristics analysis
   - The data for manual classification can be found in `post_popularity.csv` and `post_issue_difficulty.csv`
