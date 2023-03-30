@@ -18,11 +18,11 @@ understand the existing problems that GHA developers face in their practices as 
     	- 130 GitHub issues (Q\_G) with 82 closed GitHub issues (A\_G)
   - The data for manual classification can be found in `post_issue.csv`
   - Data structure: (id, paper_no, type, title, url)
-  		- id: the meta
-  		- paper\_no: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub question in our dataset, respectively.
-  		- type: "github issue" or "so post"
-  		- title: the title of a post or an issue
-  		- url: url of a post or an issue   
+    	- id: the meta
+    	- paper\_no: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub question in our dataset, respectively.
+    	- type: "github issue" or "so post"
+    	- title: the title of a post or an issue
+    	- url: url of a post or an issue   
   
 4. Data for characteristics analysis
   - The data for manual classification can be found in `post_popularity.csv` and `post_issue_difficulty.csv`
