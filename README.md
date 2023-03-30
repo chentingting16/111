@@ -26,10 +26,10 @@ understand the existing problems that GHA developers face in their practices as 
 4. Data for characteristics analysis
   - The data for manual classification can be found in `post_popularity.csv` and `post_issue_difficulty.csv`
   - post\_popularity includes 3,285 SO posts' view number, favorite number, score and answer number.
-  - post\_issue\_difficulty includes the following matrixs of 3,285 SO posts and 130 issues:
-    * interval\_fir\_ans: median time interval to the first answer (issue comment), in second
-    * interval\_acc\_ans: median time interval to the accepted answer (issue closure), in second
-    * body\_len: the sum of character numbers of the question (issue) description
+  - post\_issue\_difficulty includes the following matrixs of 3,285 SO posts and 130 issues
+  		- interval\_fir\_ans: median time interval to the first answer (issue comment), in second
+  		- interval\_acc\_ans: median time interval to the accepted answer (issue closure), in second
+  		- body\_len: the sum of character numbers of the question (issue) description
 
 ## Script
 We implement the prediction models using Python with the scipy package
