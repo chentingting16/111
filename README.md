@@ -6,7 +6,7 @@ Artifact package for the ICSE'24 paper "How do Developers Talk about GitHub Acti
 Continuous integration, deployment and delivery (CI/CD) have become cornerstones of DevOps practices. In recent years, GitHub Action (GHA) has rapidly replaced the traditional CI/CD tools on GitHub, providing efficiently automated workflows for developers. With the widespread use and influence of GHA, it is critical to
 understand the existing problems that GHA developers face in their practices as well as the potential solutions to these problems. Unfortunately, we currently have relatively little knowledge in this area. To fill this gap, we conduct a large-scale empirical study of 3,285 Stack Overflow posts and 130 GitHub issues. Our study leads to the first comprehensive taxonomy of topics related to GHA, covering the 4 phases of the GHA lifecycle, with 16 categories and 50 topics. By analyzing the characteristics of the posts and issues, we find that the Comparison, Configuration, and Component categories are more popular than other categories, and there are fewer experts in the GHA than in other domains, and such a phenomenon is most significant with respect to the Operation phase. Further, we manually analyze 1,224 accepted answers on Stack Overflow and 82 closed GitHub issues, distilling 51 fix patterns for different GHA-related problems. Our findings can contribute to the research and development of emerging GHA practices, guiding the future support of tools and technologies.
 
-##Data
+## Data
 1. Data Collection
 	* SO data, i.e., posts, from the official SO data dump (as of October 2021)
 	* GitHub data, i.e., issues, using the GitHub Search API 4
