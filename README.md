@@ -18,18 +18,18 @@ understand the existing problems that GHA developers face in their practices as 
     - 130 GitHub issues (Q\_G) with 82 closed GitHub issues (A\_G)
   - The data for manual classification can be found in `post_issue.csv`
   - Data structure: (id, paper_no, type, title, url)
-  		 - paper\_no: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub question in our dataset, respectively.
-  		 - type: "github issue" or "so post"
-  		 - title: the title of a post or an issue
-  		 - url: url of a post or an issue   
+  		- paper\_no: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub question in our dataset, respectively.
+  		- type: "github issue" or "so post"
+  		- title: the title of a post or an issue
+  		- url: url of a post or an issue   
   
 4. Data for characteristics analysis
   - The data for manual classification can be found in `post_popularity.csv` and `post_issue_difficulty.csv`
   - post\_popularity includes 3,285 SO posts' view number, favorite number, score and answer number.
   - post\_issue\_difficulty includes the following matrixs of 3,285 SO posts and 130 issues:
-    - interval\_fir\_ans: median time interval to the first answer (issue comment), in second
-    - interval\_acc\_ans: median time interval to the accepted answer (issue closure), in second
-    - body\_len: the sum of character numbers of the question (issue) description
+    * interval\_fir\_ans: median time interval to the first answer (issue comment), in second
+    * interval\_acc\_ans: median time interval to the accepted answer (issue closure), in second
+    * body\_len: the sum of character numbers of the question (issue) description
 
 ## Script
 We implement the prediction models using Python with the scipy package
